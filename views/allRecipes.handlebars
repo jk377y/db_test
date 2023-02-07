@@ -1,0 +1,12 @@
+<div id="recipeIndex" class="flex flex-col w-2/3 h-1/3">
+    <h1 class="text-center text-3xl">Recipe Index</h1>
+    <div class="flex flex-col flex-wrap h-full p-3 my-10 items-center rounded-3xl text-black bg-green-300 divShadow shadow-black border-solid border-black border-2">
+        {{#each recipes}}
+            <a href={{id}}>
+                <p class="linkHover mx-10">{{recipeName}}</p>
+            </a>
+        {{/each}}
+    </div>
+</div>
+<button onclick="window.location.href='/newRecipe'" class="absolute bottom-72 divShadow rounded-md text-xl border-black border-2 bg-green-300 text-center btnHover p-2 m-2 w-56">Add a new recipe</button>
+<button onclick="window.location.href='/deleteRecipe'" class="absolute bottom-56 divShadow rounded-md text-xl border-black border-2 bg-green-300 text-center btnHover2 p-2 m-2 w-56">Delete a recipe</button>

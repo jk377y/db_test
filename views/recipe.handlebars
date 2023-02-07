@@ -1,0 +1,35 @@
+<div class="flex w-full justify-center">
+    <div class="w-auto text-center m-5 p-2 bg-green-300 rounded-3xl divShadow shadow-black border-solid border-black border-2">
+        <h2 id="recipeName" class="text-3xl font-bold">{{recipeName}}</h2>
+        <h3 class="text-2xl font-bold ">Ingredients:</h3>
+        <div id="ingredients" class="text-xl flex-wrap ">{{ingredients}}</div>
+    </div>
+</div>
+<div class="flex flex-row h-1/2 justify-center responsiveDiv">
+    <div class="w-1/4 m-5 p-3 bg-green-300 rounded-3xl divShadow shadow-black border-solid border-black border-2">
+        <div class="bg-gray-500 rounded-xl border-solid border-black border-b-2 mb-1 p-1">
+            <h3 class="text-center text-2xl font-bold">Total Prep Time:</h3>
+            <h3 id="totalPrepTime" class="text-center text-xl font-bold">{{totalPrepTime}}<span> mins</span></h3>
+        </div>
+        <div class="flex flex-col justify-center">
+            <h3 class="text-lg font-bold">Preparation Instructions</h3>
+            <p id="prepInstructions" class="text-sm">{{prepInstructions}}</p>
+        </div>
+    </div>
+    <img id="picture" src={{picture}} alt="picture of this dish" class="w-1/4 m-5 rounded-3xl divShadow shadow-black border-solid border-black border-2 object-cover">
+    <div class="w-1/4 m-5 p-3 bg-green-300 rounded-3xl divShadow shadow-black border-solid border-black border-2">
+        <div class="bg-gray-500 rounded-xl border-solid border-black border-b-2 mb-1 p-1">
+            <h3 class="text-center text-2xl font-bold">Total Cook Time:</h3>
+            <h3 id="totalCookTime" class="text-center text-xl font-bold">{{totalCookTime}}<span> mins</span></h3>
+        </div>
+        <div class="flex flex-col justify-center">
+            <h3 class="text-lg font-bold">Cooking Instructions</h3>
+            <p id="cookInstructions" class="text-sm">{{cookInstructions}}</p>
+        </div>    
+    </div>
+</div>
+<div class="flex flex-row justify-center responsiveDiv">
+    <button id="previous-button" class="divShadow rounded-md text-xl border-black border-2 bg-green-300 text-center btnHover mx-8 my-2 w-48 p-1">Previous</button>
+    <button onclick="window.location.href='/'" class="divShadow rounded-md text-xl border-black border-2 bg-green-300 text-center btnHover my-2 w-60 p-1">Go Back To Recipe List</button>
+    <button id="next-button" class="divShadow rounded-md text-xl border-black border-2 bg-green-300 text-center btnHover mx-8 my-2 w-48 p-1">Next</button>
+</div>
